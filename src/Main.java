@@ -5,6 +5,7 @@ import java.util.Date;
 public class Main {
 
     public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
         ArrayList<Message> messages = new ArrayList<>(); 
 
         try {
@@ -23,7 +24,6 @@ public class Main {
             System.out.println("Error initializing data: " + e.getMessage());
         }
 
-        Scanner scanner = new Scanner(System.in);
         int choice = 0;
 
         do {

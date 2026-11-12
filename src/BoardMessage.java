@@ -46,4 +46,7 @@ public class BoardMessage extends Message {
     public String toString() {
         return super.toString() + ", BoardMessage [Priority=" + priority + ", Category=" + category + "]";
     }
+     public boolean isHighPriority() {
+        return this.priority == PriorityType.CRITICAL; 
+    }
 }
